@@ -2,52 +2,161 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>G.O.D. Tween</title>
+    <title>Unity Developer – Plugins & Tools</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <style>
+        :root {
+            --bg: #ffffff;
+            --text: #1f2937;
+            --card: #f9fafb;
+            --border: #e5e7eb;
+            --accent: #2563eb;
+            --muted: #6b7280;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0f172a;
+                --text: #e5e7eb;
+                --card: #020617;
+                --border: #1e293b;
+                --accent: #60a5fa;
+                --muted: #94a3b8;
+            }
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 0 16px;
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
             line-height: 1.6;
         }
-        h1, h2 {
-            color: #222;
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 48px 20px;
         }
+
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            margin-top: 0;
+            font-size: 1.4rem;
+        }
+
+        p {
+            margin: 0.5rem 0;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .subtitle {
+            color: var(--muted);
+            margin-bottom: 32px;
+        }
+
         .card {
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 16px;
-            margin-bottom: 16px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 24px;
+        }
+
+        .plugins li {
+            margin-bottom: 12px;
+        }
+
+        .status {
+            font-size: 0.85rem;
+            color: var(--muted);
+        }
+
+        footer {
+            margin-top: 48px;
+            font-size: 0.85rem;
+            color: var(--muted);
         }
     </style>
 </head>
 <body>
 
-<h1>G.O.D. Tween</h1>
-<p>Unity developer tools & plugins.</p>
+<div class="container">
 
-<div class="card">
-    <h2>About</h2>
-    <p>
-        G.O.D. Tween is a lightweight, performance-focused tweening tool for Unity.
-        Designed for clean APIs, extensibility, and production use.
-    </p>
-</div>
+    <h1>Unity Developer</h1>
+    <p class="subtitle">Tools, plugins, and gameplay-focused solutions for Unity</p>
 
-<div class="card">
-    <h2>Assets</h2>
-    <ul>
-        <li>G.O.D. Tween — Advanced tweening system for Unity</li>
-    </ul>
-</div>
+    <div class="card">
+        <h2>About Me</h2>
+		<p>
+			I am a Unity developer with over 10 years of professional experience in game development.
+			I have worked on multiple projects across different genres, focusing on clean architecture,
+			performance, and long-term maintainability.
+		</p>
+		<p>
+			In my free time, I create Unity plugins and tools to solve real-world problems encountered
+			during development. These tools are designed to improve workflows, reduce boilerplate,
+			and provide flexible, production-ready solutions.
+		</p>
+		<p>
+			Alongside tool development, I also create games and prototypes, continuously exploring
+			new ideas, patterns, and technologies within the Unity ecosystem.
+		</p>
+        <p>
+            GitHub:
+            <a href="https://github.com/ostrzolekpawel" target="_blank">
+                https://github.com/ostrzolekpawel
+            </a>
+        </p>
+    </div>
 
-<div class="card">
-    <h2>Contact</h2>
-    <p>
-        Email: <a href="mailto:ostrzolekpawel@email.com">ostrzolekpawel@email.com</a>
-    </p>
+    <div class="card">
+        <h2>Unity Plugins</h2>
+        <ul class="plugins">
+            <li>
+                <strong>Extended Buttons</strong><br>
+                <span class="status">
+                    Enhanced button components for Unity UI.
+                </span><br>
+                <a href="https://assetstore.unity.com/packages/tools/integration/extended-buttons-152732" target="_blank">
+                    View plugin
+                </a>
+            </li>
+
+            <li>
+                <strong>G.O.D. Tween</strong><br>
+                <span class="status">
+                    Advanced, extensible tweening system for Unity — Available soon.
+                </span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Contact</h2>
+        <p>
+            Email:
+            <a href="mailto:ostrzolekpawel@email.com">ostrzolekpawel@email.com</a>
+        </p>
+    </div>
+
+    <footer>
+        © 2026 — Unity Developer Plugins
+    </footer>
+
 </div>
 
 </body>
